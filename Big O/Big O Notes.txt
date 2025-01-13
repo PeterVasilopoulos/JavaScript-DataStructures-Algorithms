@@ -1,0 +1,48 @@
+GENERAL
+
+- Big O is always the worst case (ex. last item in the array)
+
+- O(n) is always a straight line, number of operations is proportional to n
+    - if there is a constant (ex. O(2n), two loops doing the same thing), the constant is dropped, always O(n)
+    - proportional
+
+- O(n^2) is generally considered inefficient (nested loop)
+    - if an O(n) function and an O(n^2) function do the same thing, O(n) is always more efficient
+    - loop within a loop
+
+- drop non-dominants on Big O notation
+    - if we have a nested loop in a function and then another separate loop after, the notation would be O(n^2 + n), but we drop the second n and just write it as O(n^2)
+
+- O(1) is a function with 1 operation, no loops (ex. return n + n)
+    - even if there are more operations (ex. return n + n + n + n, O(3)), always write it as O(1)
+    - the most efficient scenario
+    - constant time
+
+- O(log n) uses divide and conquer method to work very efficiently (second most efficient behind O(1))
+    - with a sorted array, continually cuts in half to find value
+    - divide and conquer
+
+- if you are given multiple inputs (ex. function(a, b)) and looping through both separately you need to use the inputs in the Big O notation (O(a + b))
+    - if both inputs are used in a nested loop, Big O notation would be O(a * b), cannot simplify further
+
+
+
+ARRAYS
+
+- adding or removing elements from the END (push and pop) of the array is an O(1) operation because they don't change the index of any other elements in the array
+    - end is O(1)
+
+- adding or removing elements from the BEGINNING (shift and unshift) of the array is an O(n) operation where n is the number of items in the array because every element must have its index changed
+    - beginning is O(n)
+
+- adding or removing elements from the MIDDLE (splice) of the array is an O(n) operation since Big O is always the worst case scenario and constants are dropped
+    - middle is O(n)
+
+- searching for an item in an array by looping through is O(n), but searching for an items using the specific index is O(1)
+
+- arrays are good if you want to access items by index, but bad if you want to add or remove many things from the beginning
+
+
+
+Big O Cheat Sheet
+https://www.bigocheatsheet.com/
