@@ -1,5 +1,5 @@
 function partitionList(x) {
-    if(length <= 1) {
+    if(this.length <= 1) {
         return
     }
     
