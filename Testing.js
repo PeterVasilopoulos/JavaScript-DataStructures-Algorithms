@@ -177,3 +177,25 @@ function maxNumber(num) {
 
 // console.log(maxNumber(num1))
 // console.log(maxNumber(num2))
+
+
+
+
+let set1 = new Set();
+
+set1.add(1);
+set1.add(2);
+
+// console.log(set1.has(1));
+// console.log(set1.has(3));
+
+
+
+let bin = [1,0,1,1];
+let num = 0;
+
+for(let i = 0; i < bin.length; i++) {
+    num = num * 2 + bin[i];
+}
+
+// console.log(num);
