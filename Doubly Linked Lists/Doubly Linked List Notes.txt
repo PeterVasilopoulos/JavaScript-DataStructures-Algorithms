@@ -1,0 +1,2 @@
+- Same as singly linked list, but there is also an arrow going backwards 
+    (can traverse backwards throught he list)
