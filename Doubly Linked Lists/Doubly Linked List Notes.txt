@@ -1,2 +1,69 @@
 - Same as singly linked list, but there is also an arrow going backwards 
-    (can traverse backwards throught he list)
+    (can traverse backwards through the list)
+
+Node Class
+- constructor
+    - this.value = value
+    - this.next = null
+    - this.prev = null
+
+DoublyLinkedList Class
+- constructor is exactly the same as LL
+    - const newNode = new Node(value)
+    - this.head = newNode
+    - this.tail = this.head
+    - this.length = 1
+
+- push(value) O(1) 
+    - this.tail.next = newNode
+    - newNode.prev = tail
+    - this.tail = newNode
+
+- pop O(1) (faster than LL)
+    - temp = this.tail
+    - this.tail = temp.prev 
+    - this.tail.next = null 
+    - temp.prev = null 
+
+- unshift(value) O(1)
+    - const newNode = new Node(vlaue)
+    - newNode.next = this.head 
+    - this.head.prev = newNode 
+    - this.head = newNode 
+
+- shift O(1)
+    - let temp = this.head
+    - this.head = temp.next 
+    - temp.next = null 
+    - this.head.prev = null 
+
+- get(index) O(n)
+    - check if index is out of scope first
+    - check if index is in first half of list or second half
+        - loop forwards for first half
+        - loop backwards for second half
+
+- set(index, value) O(n) 
+    - same as get but we set the new value after we get to the node
+
+- insert(index, value) O(n)
+    - check if index is out of scope 
+    - use unshift if index = 0
+    - use push if index = this.length 
+    - const newNode = new Node(value) 
+    - const before = this.get(index - 1) 
+    - const after = before.next 
+    - before.next = newNode 
+    - newNode.prev = before 
+    - after.prev = newNode 
+    - newNode.next = after
+
+- remove(index) O(n)
+    - check if index is out of scope 
+    - use shift if index = 0 
+    - use pop if index = this.length - 1
+    - const temp = this.get(index)
+    - temp.prev.next = temp.next 
+    - temp.next.prev = temp.prev 
+    - temp.next = null 
+    - temp.prev = null 
