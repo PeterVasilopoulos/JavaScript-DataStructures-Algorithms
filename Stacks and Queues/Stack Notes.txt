@@ -1,0 +1,19 @@
+Stack
+- good analogy is a can of tennis balls
+- push item to the top of a stack 
+- can only remove the top item (most recently added) from the stack 
+- pop item to remove it from stack 
+- LIFO (last in first out)
+
+- common way of implementing a stack is by using an array
+- adding or removing from the end of an array is an O(1) operation
+- adding or removing from the beginning is an O(n) operation
+
+- we will use a linked list for implementing stacks 
+- left side of linked list (starting with head) will be the top of the stack 
+- null terminated end is at the bottom of the stack 
+- removing item from end of linked list is O(n), adding an item is O(1)
+- removing and adding item at beginning are both O(1)
+
+- we will rename head and tail of linked list to top and bottom instead 
+- we can just remove bottom (tail) instead
