@@ -1,0 +1,19 @@
+Queues
+- add to back to of queue (enqueue), remove from front of queue (dequeue)
+- FIFO (first in first out)
+- just like a stop sign or a line 
+
+- could use array for a queue
+- one end of array will be front and one will be back, doesn't matter which
+- adding or removing from front is O(n)
+- adding or removing from back is O(1)
+
+- could use linked list for a queue
+- adding and removing from front are both O(1)
+- adding to back is O(1), removing from back is O(n)
+- best solution is to make the head of linked list the front of the line
+- tail of linked list is the back of the line
+    - enqueue from the end (add)
+    - dequeue fron the front (remove)
+- this way both operations are O(1) 
+- change head and tail to first and last 
