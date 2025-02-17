@@ -1,0 +1,21 @@
+Binary tree node
+- has value, left, and right
+- left and right start as null
+
+Full Tree 
+- every item points to either 2 nodes or 0 nodes 
+
+Perfect Tree 
+- every line is completely filled all the way across 
+- a perfect tree will always be full and complete 
+
+Complete Tree 
+- the tree is as compact as it can be with the number of nodes in the tree 
+- can be complete without being full or perfect 
+
+
+- top node is parent node 
+- everything below is a child node 
+- adjacent nodes are siblings 
+- every node has only 1 parent 
+- a node that has no children is called a leaf 
