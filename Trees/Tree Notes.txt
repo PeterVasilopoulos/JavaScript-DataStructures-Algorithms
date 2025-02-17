@@ -19,3 +19,24 @@ Complete Tree
 - adjacent nodes are siblings 
 - every node has only 1 parent 
 - a node that has no children is called a leaf 
+
+
+
+Binary Search Tree 
+- when adding new value into tree, if greater than a node, it goes to the right, if less, it goes to the left 
+
+BST Big O 
+- finding, inserting, and removing are all O(log n) (very efficient; divide and conquer) 
+    - cutting the tree in half with every operation (when tree is complete) 
+- worst possible scenario for a BST is O(n) if there are no forks in the tree (straight line of nodes) 
+- best possible scenario is O(log n) 
+- the result is usually somewhere between those two possiblities, so we treat BST as O(log n) 
+    - lookup, insert, remove 
+
+Linked List vs BST 
+- lookup:
+    - LL is O(n), BST is O(log n)
+- remove: 
+    - LL is O(n), BST is O(log n) 
+- insert:
+    - LL is O(1), BST is O(log n)
